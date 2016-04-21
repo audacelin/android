@@ -1,0 +1,43 @@
+---git仓库配置
+git config --global user.name "audacelin"
+git config --global user.email "920401496@qq.com"
+
+
+
+git init 		--初始化管理库
+git add  first.txt 	--添加文件到临时库
+git commit -m "注释"	--提交文件到工作库
+
+git status 		--查看文件是否提交
+git log	、git log -pretty=oneline、git reflog	--文件提交历史
+git diff first.txt	--文件修改内容
+cat first.txt 		--查看内容
+
+--版本回退
+git reset --hard HEAD^  --回滚上一版本
+git reset --hard 版本号
+git checkout --first.txt --版本库覆盖工作区文件
+
+--删除文件
+rm first.txt
+
+ssh-keygen  -t rsa –C “youremail@example.com” --生成公钥秘钥
+
+--本地库与远程github关联
+git remote add origin https://github.com/audacelin/android.git
+git push  --提交github
+
+--复制github库到本地
+git clone https://github.com/audacelin/android.git
+
+查看分支：git branch
+
+创建分支：git branch name
+
+切换分支：git checkout name
+
+创建+切换分支：git checkout –b name
+
+合并某分支到当前分支：git merge name
+
+删除分支：git branch –d name
